@@ -57,3 +57,32 @@ main {
     font-size: xx-large;
     text-decoration: none;
 }
+
+.bio-image img {
+    margin-right: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    align-self:flex-end ;
+} 
+
+.bio-text {
+    flex:1;
+    max-width:1000px;
+}
+
+.bio-container {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    margin-right: 220px;
+    margin-left: 200px;
+    max-width: 260px;
+    align-self:flex-end ;
+}
