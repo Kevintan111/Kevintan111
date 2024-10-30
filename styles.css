@@ -49,8 +49,8 @@ main {
 }
 
 .separator {
-    border: 1px solid #ccc;
-    margin: 20px 0;
+    border: 5px solid black;
+    margin: 20px 0 0;
 }
 
 .top-left a {
