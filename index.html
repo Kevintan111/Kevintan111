@@ -10,7 +10,9 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h1>Kevin Tan</h1>
+            <div class="top-left">
+               <h1><a href="#" class ="scroll-top">Kevin Tan</a></h1> 
+            </div>
             <nav>
                 <ul>
                     <li><a href='#about-me'>About Me</a></li>
@@ -21,21 +23,24 @@
         </div>
 
         <main>
-            <section id="about-me">
-                <h2>About Me</h2>
-                <p>Hey there, I'm Kevin! I am a third year computing science student at SFU. I like to play video games, play volleyball, and go bouldering. My interests in computers and coding began when I built my own computer at the early age of 12 years old. In this website, you can explore my hobbies, professional status and skills, and where to contact me. Happy browsing!</p>
-                <img src="images/me.JPG" alt="My favorite feline friend Pickles and I">
-                <hr class="separator">
+            <div class="about">
+                <section id="about-me">
+                    <h2>About Me</h2>
+                    <p>Hey there, I'm Kevin! I am a third year computing science student at SFU. I like to play video games, play volleyball, and go bouldering. My interests in computers and coding began when I built my own computer at the early age of 12 years old. In this website, you can explore my hobbies, professional status and skills, and where to contact me. Happy browsing!</p>
+                    <img src="images/me.JPG" alt="My favorite feline friend Pickles and I">
+                    <hr class="separator">
 
-                <h3>Find me here!</h3>
-                <ul class="socials">
-                    <li><a href='https://github.com/kevintan111'><img src="images/github.png" alt="GitHub"></a></li>
-                    <li><a href='https://www.instagram.com/kevintan.jpg/'><img src="images/instagram.png" alt="Instagram"></a></li>
-                    <li><a href='https://www.youtube.com/@DodoBean'><img src="images/youtube.png" alt="YouTube"></a></li>
-                    <li><a href='https://www.linkedin.com/in/kevin-tan-614914335/'><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-                </ul>
-                <hr class="separator">
-            </section>
+                    <h3>Find me here!</h3>
+                    <ul class="socials">
+                        <li><a href='https://github.com/kevintan111'><img src="images/github.png" alt="GitHub"></a></li>
+                        <li><a href='https://www.instagram.com/kevintan.jpg/'><img src="images/instagram.png" alt="Instagram"></a></li>
+                        <li><a href='https://www.youtube.com/@DodoBean'><img src="images/youtube.png" alt="YouTube"></a></li>
+                        <li><a href='https://www.linkedin.com/in/kevin-tan-614914335/'><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+                    </ul>
+                    <hr class="separator">
+                </section>
+            </div>
+
 
             <section id="work-skills">
                 <h2>My Work + Skills</h2>
@@ -99,3 +104,15 @@
     </div>
 </body>
 </html>
+
+<script>
+    document.querySelectorAll('.sidebar a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 80; // Adjusts for sidebar height
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        });
+    });
+</script>
