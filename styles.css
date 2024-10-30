@@ -3,4 +3,50 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: azure;
+    font-size: 12;
+}
+
+header {
+    background-color:azure;
+    text-align:center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: turquoise;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
 }
