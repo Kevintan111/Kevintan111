@@ -86,3 +86,27 @@ main {
     max-width: 260px;
     align-self:flex-end ;
 }
+
+.interests {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.bouldering {
+    flex:1;
+    max-width: 45%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.bouldering p {
+    max-width: 80%;
+}
+
+.bouldering img {
+    max-width:80%;
+    max-height: 70%;
+
+}
