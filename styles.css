@@ -4,13 +4,6 @@ body {
     padding: 0;
     display: flex;
     background-color: azure;
-    font-size: 12;
-}
-
-header {
-    background-color:azure;
-    text-align:center;
-    padding: 20px 0;
 }
 
 .container {
@@ -18,7 +11,7 @@ header {
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: turquoise;
     width: 200px;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -27,6 +20,7 @@ header {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+
 }
 
 .sidebar li {
@@ -35,6 +29,7 @@ header {
 
 .sidebar a {
     text-decoration: none;
+    font-size: large;
 }
 
 .sidebar a:hover {
