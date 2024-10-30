@@ -110,3 +110,25 @@ main {
     max-height: 70%;
 
 }
+
+.volleyball {
+    flex:1;
+    max-width: 45%;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.volleyball p {
+    max-width: 80%;
+}
+
+.volleyball img {
+    max-width:80%;
+}
+.resume a {
+    color: blue;
+}
+
+.work a {
+    color: blue;
+}
