@@ -12,7 +12,7 @@ body {
 
 .sidebar {
     background-color: turquoise;
-    width: 200px;
+    width: 180px;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: fixed;
@@ -67,6 +67,8 @@ main {
 
 .bio-text {
     flex:1;
+    padding-left: 50px;
+    padding-bottom: 200px;
     max-width:1000px;
 }
 
